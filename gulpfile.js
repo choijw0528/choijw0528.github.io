@@ -5,8 +5,6 @@ const fs = require('fs');
 const path = require('path');
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
-const vfb = require('vinyl-ftp-branch');
-const ftp = require('vinyl-ftp');
 const del = require('del');
 const eventStream = require('event-stream');
 const runSequence = require('run-sequence');
@@ -22,7 +20,6 @@ const md5 = require('gulp-md5-plus');
 const gulpif = require('gulp-if');
 const plumber = require('gulp-plumber');
 const cleanCSS = require('gulp-clean-css');
-// const uitIndex = require('gulp-nts-uit-index-helper');
 const gulpSort = require('gulp-sort');
 const data = require('gulp-data');
 
@@ -60,11 +57,6 @@ var config = {
 		},
 	},
 	md5: false,
-	// uitIndex: true,
-	// uitIndexOption: {
-	// 	path: [path.join(paths.html_path,'*.html'),path.join(paths.html_path,'*.php')],
-	// 	options: {}
-	// },
 	sprite_ratio: {
 		png: 2,
 		svg: 2,
@@ -354,14 +346,6 @@ gulp.task('browserSync', function() {
 		gulp.watch(paths.html_path+'/*.html').on('change',browserSync.reload);
 	}
 });
-
-// gulp.task('uit_index',function(){
-// 	if(config.uitIndex) {
-// 		return gulp.src(config.uitIndexOption.path) // 인덱스 대상 파일 선택
-// 			.pipe(uitIndex(config.uitIndexOption.options))
-// 			.pipe(gulp.dest('src/')); // 인덱스 저장 경로
-// 	}
-// });
 
 gulp.task('md5-sprite', ['makeSprite'], function() {
 	var options = {
