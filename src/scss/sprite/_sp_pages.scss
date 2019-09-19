@@ -1,0 +1,28 @@
+// Sprites Map
+$sp_pages: (
+	name: 'sp_pages',
+	ratio: 2,
+	width: 234px,
+	height: 234px,
+	image: '../img/sprite/sp_pages.png',
+	sprites: (
+	icon_1: (
+			offset-x: -148px,
+			offset-y: 0px,
+			width: 86px,
+			height: 86px,
+		),
+		icon_2: (
+			offset-x: 0px,
+			offset-y: -148px,
+			width: 86px,
+			height: 86px,
+		),
+		icon_2_pc: (
+			offset-x: 0px,
+			offset-y: 0px,
+			width: 144px,
+			height: 144px,
+		),
+	)
+);
