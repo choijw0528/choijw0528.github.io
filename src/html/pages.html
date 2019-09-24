@@ -7,9 +7,191 @@
     <link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-    <h1>Github Pages Test</h1>
     <div class="wrap">
-        <p>여기다가 이제 내용을 넣으면 되는건감?!</p>
+        <header>
+            <h1>마크업 레퍼런스 정리</h1>
+        </header>
+
+        <div class="contents_wrap">
+            <nav>
+                <ul class="menu_list">
+                    <li class="list_item">
+                        <a href="#item1" class="anchor">왼쪽 사진 + 오른쪽 텍스트</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#item2" class="anchor">왼쪽 텍스트 + 오른쪽 사진</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#item3" class="anchor">텍스트 말줄임 + 아이콘</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#item4" class="anchor">item4</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#item5" class="anchor">item5</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="contents">
+                <h2 id="contents" class="blind">contents</h2>
+                <div class="content_area item1" id="item1">
+                    <h3 class="section_title">왼쪽 사진 + 오른쪽 텍스트</h3>
+                    <div class="box_area type1">
+                        <strong>float: left</strong>
+                        <div class="box">
+                            <div class="thumb">
+                                <img src="http://dev.ui.naver.com/tmp/?100x100_default_y_FFB4B4_50" width="100" height="100" alt="임시 이미지">
+                            </div>
+                            <div class="text_area">
+                                <strong>title</strong>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_area type2">
+                        <strong>display: table</strong>
+                        <div class="box">
+                            <div class="thumb">
+                                <img src="http://dev.ui.naver.com/tmp/?100x100_default_y_FFB4B4_50" width="100" height="100" alt="임시 이미지">
+                            </div>
+                            <div class="text_area">
+                                <strong>title</strong>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_area type3">
+                        <strong>display: flex</strong>
+                        <div class="box">
+                            <div class="thumb">
+                                <img src="http://dev.ui.naver.com/tmp/?100x100_default_y_FFB4B4_50" width="100" height="100" alt="임시 이미지">
+                            </div>
+                            <div class="text_area">
+                                <strong>title</strong>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_area item2" id="item2">
+                    <h3 class="section_title">왼쪽 텍스트 + 오른쪽 사진</h3>
+                    <div class="box_area type1">
+                        <strong>float: right</strong>
+                        <div class="box">
+                            <div class="thumb">
+                                <img src="http://dev.ui.naver.com/tmp/?100x100_default_y_FFB4B4_50" width="100" height="100" alt="임시 이미지">
+                            </div>
+                            <div class="text_area">
+                                <strong>title</strong>
+                                <p>text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_area type2">
+                        <strong>display: table</strong>
+                        <div class="box">
+                            <div class="text_area">
+                                <strong>title</strong>
+                                <p>text</p>
+                            </div>
+                            <div class="thumb">
+                                <img src="http://dev.ui.naver.com/tmp/?100x100_default_y_FFB4B4_50" width="100" height="100" alt="임시 이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_area type3">
+                        <strong>display: flex</strong>
+                        <div class="box">
+                            <div class="text_area">
+                                <strong>title</strong>
+                                <p>text</p>
+                            </div>
+                            <div class="thumb">
+                                <img src="http://dev.ui.naver.com/tmp/?100x100_default_y_FFB4B4_50" width="100" height="100" alt="임시 이미지">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_area item3" id="item3">
+                    <h3 class="section_title">텍스트 말줄임 + 아이콘</h3>
+                    <h4 class="sub_section_title">1. 아이콘이 오른쪽 끝에 붙는 경우</h4>
+                    <div class="box_area type1_1">
+                        <strong>float: right</strong>
+                        <div class="box">
+                            <span class="icon"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                            <p class="text">HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Language, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)라는 의미의 웹 페이지를 위한 지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.</p>
+                        </div>
+                    </div>
+                    <div class="box_area type1_2">
+                        <strong>display: flex</strong>
+                        <div class="box">
+                            <p class="text">HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Language, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)라는 의미의 웹 페이지를 위한 지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.</p>
+                            <span class="icon"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                        </div>
+                    </div>
+
+                    <h4 class="sub_section_title">2. 아이콘이 텍스트 따라서 오른쪽에 붙는 경우</h4>
+                    <div class="box_area type2_1">
+                        <strong>float: right</strong>
+                        <div class="box">
+                            <div class="box_inner">
+                                <span class="icon"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                                <p class="text">HTML은 하이퍼텍스트 마크업 언어</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_area type2_2">
+                        <strong>display: flex</strong>
+                        <div class="box">
+                            <p class="text">HTML은 하이퍼텍스트 마크업 언어</p>
+                            <span class="icon"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                        </div>
+                    </div>
+
+                    <h4 class="sub_section_title">3. 아이콘이 텍스트 양 옆 끝에 붙는 경우</h4>
+                    <div class="box_area type3_1">
+                        <strong>float: right, float: left</strong>
+                        <div class="box">
+                            <span class="icon right"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                            <span class="icon left"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                            <p class="text">HTML은 하이퍼텍스트 마크업 언어</p>
+                        </div>
+                    </div>
+                    <div class="box_area type3_2">
+                        <strong>display: flex</strong>
+                        <div class="box">
+                            <span class="icon left"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                            <p class="text">HTML은 하이퍼텍스트 마크업 언어</p>
+                            <span class="icon right"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                        </div>
+                    </div>
+
+                    <h4 class="sub_section_title">4. 아이콘이 텍스트 따라서 양 옆에 붙는 경우</h4>
+                    <div class="box_area type4_1">
+                        <strong>float: right, float: left</strong>
+                        <div class="box">
+                            <div class="box_inner">
+                                <span class="icon right"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                                <span class="icon left"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                                <p class="text">HTML은 하이퍼텍스트 마크업 언어</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_area type4_2">
+                        <strong>display: flex</strong>
+                        <div class="box">
+                            <span class="icon left"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                            <p class="text">HTML은 하이퍼텍스트 마크업 언어</p>
+                            <span class="icon right"><span class="blind">아이콘 영역(가상 요소로 대체 가능)</span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <a href="#contents" class="btn_top">위로 가기</a>
     </div>
 </body>
 </html>
